@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #575757;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the whole app */
+div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Heading style */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Flex container for form inputs and button */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+/* Styles for the task list */
+.taskList {
+  margin-top: 20px;
+}
+
+.task {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.task h3 {
+  margin: 0;
+  color: #333;
+}
+
+.task p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.task button {
+  margin-right: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .task {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input[type="text"], select {
+    font-size: 14px;
+  }
+}
+
+.task.pending {
+  border-left: 5px solid #007bff; 
+}
+
+.task.completed {
+  border-left: 5px solid #28a745; 
+}
+
+.task.high-priority {
+  background-color: #f8d7da; 
+}
+
+.task.medium-priority {
+  background-color: #fff3cd; 
+}
+
+.task.low-priority {
+  background-color: #d4edda; 
+}
+
+.task {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.task h3 {
+  margin: 0;
+  color: #333;
+}
+
+.task p {
+  margin: 5px 0;
+  color: #666;
+}
