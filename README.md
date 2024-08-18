@@ -18,8 +18,3 @@ La arquitectura, es la base para cualquier API RESTful, ya que cuenta con:
 - Reutilización de Código: Modelos y controladores pueden ser reutilizados, reduciendo la duplicación.
 - Mantenibilidad: La estructura organizada mejora la comprensión del código y la colaboración.
 
-  
-Asegurar que la documentación sea clara y comprensible para otros desarrolladores.
-Utilizar Swagger (OAS 3.0) para documentar cada endpoint de la API REST.
-Describir cada ruta de manera detallada, incluyendo detalles sobre los parámetros, tipos de respuesta y ejemplos de uso.
-Integrar la documentación de Swagger en la API para que sea accesible fácilmente. 
